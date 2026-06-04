@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Pattern-Hunter's Journal — Brand Kit · TarotPulse</title>
+<meta name="description" content="One unified brand system for The Pattern-Hunter's Journal and the Tarot Ritual Lab funnel.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap');
+:root{--navy:#16204a;--navy-2:#1d2752;--obsidian:#0f1330;--gold:#c8a44d;--gold-deep:#b98f3c;--gold-soft:#e2cf98;--lav:#b9a3e3;--ink:#ece7d8;--mut:#9a93b4;--paper:#fbf9f3;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Cormorant Garamond',Georgia,serif;background:radial-gradient(140% 60% at 50% 0%,var(--navy-2) 0%,var(--navy) 45%,var(--obsidian) 100%);color:var(--ink);line-height:1.55;}
+.wrap{max-width:980px;margin:0 auto;padding:0 26px;}
+.eyebrow{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;}
+h1{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(34px,6vw,60px);color:var(--gold-soft);letter-spacing:1.5px;line-height:1.08;margin:10px 0;}
+h2{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(24px,3.4vw,32px);color:var(--gold);letter-spacing:.5px;margin:6px 0;}
+h3{font-family:'Cinzel',serif;font-weight:600;font-size:18px;color:var(--gold-soft);letter-spacing:.5px;margin:18px 0 6px;}
+p{font-size:19px;margin:12px 0;color:#ddd8ea;}
+p.lead{font-size:22px;font-style:italic;color:#cfc8e6;}
+a{color:var(--gold-soft);}
+.pulse{height:22px;width:300px;margin:26px auto;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='22'%3E%3Cpath d='M0 11 H108 l8 -9 l8 18 l10 -16 l6 7 H300' fill='none' stroke='%23c8a44d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+section{padding:34px 0;border-top:1px solid rgba(200,164,77,.18);}
+.hero{text-align:center;padding:64px 0 30px;border:none;}
+.hero img{width:230px;border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.55);margin-top:22px;}
+.note{background:rgba(185,163,227,.08);border-left:3px solid var(--lav);border-radius:6px;padding:18px 22px;font-style:italic;font-size:19px;color:#e7e1f5;}
+.note b{font-style:normal;color:var(--lav);font-family:'Cinzel',serif;font-weight:600;}
+/* palette */
+.swatches{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0;}
+.sw{flex:1;min-width:120px;border-radius:8px;overflow:hidden;border:1px solid rgba(200,164,77,.25);}
+.sw .chip{height:64px;}
+.sw .meta{padding:8px 10px;font-family:'Space Mono',monospace;font-size:11px;background:rgba(13,19,48,.6);}
+.sw .meta b{color:var(--gold-soft);display:block;font-size:12px;letter-spacing:1px;}
+.sw .meta span{color:var(--mut);}
+.type-row{border:1px solid rgba(200,164,77,.22);border-radius:8px;padding:16px 20px;margin:10px 0;background:rgba(13,19,48,.35);}
+.type-row .k{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;}
+.cinzel{font-family:'Cinzel',serif;font-size:26px;color:var(--gold-soft);}
+.cormorant{font-family:'Cormorant Garamond',serif;font-size:22px;}
+.mono{font-family:'Space Mono',monospace;font-size:15px;color:var(--gold-soft);}
+.motifs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:14px;}
+.motif{border:1px solid rgba(200,164,77,.22);border-radius:8px;padding:16px;background:rgba(13,19,48,.35);font-size:17px;}
+.motif b{font-family:'Cinzel',serif;color:var(--gold-soft);display:block;margin-bottom:4px;}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:18px;}
+.card{background:rgba(13,19,48,.45);border:1px solid rgba(200,164,77,.22);border-radius:10px;overflow:hidden;}
+.card img{width:100%;display:block;background:var(--obsidian);}
+.card .cap{padding:12px 14px;font-size:15px;color:#cfc8e6;}
+.card .cap b{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:15px;letter-spacing:.5px;}
+.card .cap .tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:3px;}
+.warn{color:#e0a96d;}
+/* details */
+details{border:1px solid rgba(200,164,77,.28);border-radius:10px;margin:14px 0;background:rgba(13,19,48,.4);overflow:hidden;}
+summary{cursor:pointer;padding:18px 22px;font-family:'Cinzel',serif;font-size:20px;color:var(--gold-soft);list-style:none;}
+summary::-webkit-details-marker{display:none;}
+summary::before{content:"▸ ";color:var(--gold);}
+details[open] summary::before{content:"▾ ";}
+.det-body{padding:4px 22px 22px;}
+pre{background:#0b0f26;border:1px solid rgba(200,164,77,.22);border-radius:8px;padding:16px;overflow-x:auto;font-family:'Space Mono',monospace;font-size:13px;color:#d9e0ff;line-height:1.5;white-space:pre-wrap;}
+.copyblock{background:rgba(11,15,38,.7);border-left:3px solid var(--gold);border-radius:6px;padding:14px 18px;margin:12px 0;font-size:18px;}
+.copyblock .k{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:6px;}
+ol li,ul li{font-size:18px;margin:9px 0;color:#ddd8ea;}
+ol,ul{padding-left:22px;}
+.dl{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;}
+.dl a{display:inline-block;border:1px solid var(--gold);border-radius:8px;padding:12px 18px;color:var(--gold-soft);text-decoration:none;font-family:'Space Mono',monospace;font-size:13px;letter-spacing:1px;transition:.15s;}
+.dl a:hover{background:var(--gold);color:var(--obsidian);}
+footer{text-align:center;padding:50px 0 60px;color:var(--mut);font-family:'Space Mono',monospace;font-size:13px;letter-spacing:1px;}
+footer .brand{color:var(--gold-soft);letter-spacing:3px;}
+.btn-demo{display:inline-block;background:linear-gradient(180deg,#d9b75f,#c8a44d);color:#1a1530;font-family:'Cinzel',serif;font-weight:700;font-size:18px;padding:13px 30px;border-radius:8px;text-decoration:none;box-shadow:0 6px 20px rgba(200,164,77,.3);}
+</style></head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Track / Decode / Transform</div>
+    <h1>The Pattern-Hunter's<br>Journal — Brand Kit</h1>
+    <p class="lead">One system, head to toe. From the journal cover to the funnel.</p>
+    <img src="assets/cover.jpg" alt="The Pattern-Hunter's Journal cover">
+    <div class="pulse"></div>
+  </header>
+
+  <section>
+    <div class="note"><b>Hey Jaye Anne —</b> you built a beautiful funnel, and the journal had its own look, and they were two different worlds. This is the one world they now share — so the sales page, the journal, the audio, and the cheat sheet all feel like the same hand made them. Take what's useful, ignore what isn't. It's a resource, not a rulebook.</div>
+  </section>
+
+  <section>
+    <div class="eyebrow">The idea</div>
+    <h2>Tarot × Pulse</h2>
+    <p>The brand thesis is in the name. <b>Tarot</b> — ancient, gold, serif, the heirloom grimoire. <b>Pulse</b> — the signal, the data-line, the pattern-tracking that makes TarotPulse a category of one instead of one more pretty tarot journal. The look holds both at once: an heirloom grimoire that's secretly a data instrument. Every asset carries the same three tells — the <b>gold pulse-waveform</b>, the <b>filigree that melts into circuit-traces</b>, and constellations drawn as <b>connected data-points</b>.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">The system</div>
+    <h2>Colors</h2>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#16204a"></div><div class="meta"><b>Navy</b><span>#16204A · ground</span></div></div>
+      <div class="sw"><div class="chip" style="background:#0f1330"></div><div class="meta"><b>Obsidian</b><span>#0F1330 · deep</span></div></div>
+      <div class="sw"><div class="chip" style="background:#c8a44d"></div><div class="meta"><b>Gold</b><span>#C8A44D · primary</span></div></div>
+      <div class="sw"><div class="chip" style="background:#e2cf98"></div><div class="meta"><b>Soft Gold</b><span>#E2CF98 · on dark</span></div></div>
+      <div class="sw"><div class="chip" style="background:#b9a3e3"></div><div class="meta"><b>Lavender</b><span>#B9A3E3 · rare accent</span></div></div>
+      <div class="sw"><div class="chip" style="background:#fbf9f3"></div><div class="meta"><b>Ivory</b><span>#FBF9F3 · paper</span></div></div>
+    </div>
+    <p style="font-size:16px;color:var(--mut)">Navy + gold do 90% of the work. Lavender is the one "pulse" signal — used sparingly (a glow on the pulse-line, the third eye). Never a third primary.</p>
+
+    <h3>Type</h3>
+    <div class="type-row"><span class="k">Display / titles — Cinzel</span><div class="cinzel">The Pattern-Hunter's Journal</div></div>
+    <div class="type-row"><span class="k">Body — Cormorant Garamond</span><div class="cormorant">A card a day, a few honest lines, thirty days.</div></div>
+    <div class="type-row"><span class="k">Data layer — Space Mono</span><div class="mono">TRACK / DECODE / TRANSFORM</div></div>
+
+    <h3>Motifs</h3>
+    <div class="motifs">
+      <div class="motif"><b>The Pulse</b>A gold EKG waveform — the brand's through-line. Use it as dividers, the audio soundbar, accents.</div>
+      <div class="motif"><b>Filigree → Circuit</b>Ornate gold borders that blend into fine circuit-traces at the edges. Ancient meets signal.</div>
+      <div class="motif"><b>Constellations as nodes</b>Star maps drawn as connected gold data-points — the chart that's also a graph.</div>
+      <div class="motif"><b>The keyline frame</b>A delicate gold inner border on every surface, echoing the cover.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">The assets</div>
+    <h2>One face, everywhere</h2>
+    <div class="gal">
+      <div class="card"><img src="assets/cover.jpg" alt="cover"><div class="cap"><span class="tag">Cover</span><b>The Pattern-Hunter's Journal</b></div></div>
+      <div class="card"><img src="assets/interior-welcome.png" alt="welcome page"><div class="cap"><span class="tag">Interior</span><b>Welcome</b> — serif body, pulse divider.</div></div>
+      <div class="card"><img src="assets/interior-day.png" alt="day page"><div class="cap"><span class="tag">Interior</span><b>Daily Pull</b> — Space Mono data fields.</div></div>
+      <div class="card"><img src="assets/interior-checkpoint.png" alt="checkpoint page"><div class="cap"><span class="tag">Interior</span><b>Weekly Checkpoint</b></div></div>
+      <div class="card"><img src="assets/audio-guide.jpg" alt="audio guide"><div class="cap"><span class="tag">Funnel · ready</span><b>Audio Guide</b> — the pulse is the soundbar.</div></div>
+      <div class="card"><img src="assets/symbol-map.png" alt="symbol map"><div class="cap"><span class="tag">Funnel · ready</span><b>The Symbol Map</b> — built in real type (fully editable).</div></div>
+      <div class="card"><img src="assets/sales-hero.jpg" alt="sales hero"><div class="cap"><span class="tag warn">Direction only</span><b>Sales Hero</b> — visual mockup. Build the real page in GHL with the copy below.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Ready to paste</div>
+    <h2>Sales page copy</h2>
+    <p>Voice: knowing, a little dry, sacred-but-not-precious. Built for the $17 <b>Tarot Ritual Lab</b> offer.</p>
+    <details><summary>The full page copy</summary><div class="det-body">
+      <div class="copyblock"><span class="k">Eyebrow</span>TRACK / DECODE / TRANSFORM</div>
+      <div class="copyblock"><span class="k">Headline</span>You've Spotted the Pattern. Now, Let's Decode the Story.</div>
+      <div class="copyblock"><span class="k">Subhead</span>Most people see a "Stalker Card" — the one that keeps showing up — and call it a fluke. You know better.</div>
+      <div class="copyblock"><span class="k">Body</span>That card your deck keeps handing back isn't the universe stuttering. It's a message you haven't fully heard yet. The Tarot Ritual Lab turns thirty days of daily pulls into a map of your own patterns — what your deck keeps saying, and what it's been asking you to finally do about it. No bypassing, no performance. Just you, paying attention long enough to hear it.</div>
+      <div class="copyblock"><span class="k">Offer — "Introducing: The Tarot Ritual Lab"</span>• <b>The Pattern-Hunter's Journal</b> — a 30-day guided tracking journal (digital + printable)<br>• <b>The "Intuitive Opening" Audio Guide</b> — ritual + reading walkthroughs, digital &amp; portable<br>• <b>The Universal Symbol Map</b> — your one-page decode cheat sheet</div>
+      <div class="copyblock"><span class="k">Price + CTA button</span>$17, one-time → button: <b>Add to Cart — Only $17</b></div>
+      <div class="copyblock"><span class="k">Reassurance (under the button)</span>One-time $17. No subscription, no upsell maze. Pen-and-paper works too — the method is the point; this just keeps the count.</div>
+      <div class="copyblock"><span class="k">Closing line</span>Stop letting your deck's most important messages slip through your fingers. Start your 30-day pull today.</div>
+      <div class="copyblock"><span class="k">Mini-FAQ</span><b>Need to know tarot?</b> No — the Symbol Map gives you the keys.<br><b>Digital or physical?</b> Digital + printable; print it or work on screen.<br><b>Is this a subscription?</b> No. One-time $17, yours to keep.</div>
+    </div></details>
+  </section>
+
+  <section>
+    <div class="eyebrow">Make it work</div>
+    <h2>Building it in GoHighLevel</h2>
+    <p>The mockups show the look; here's how to get that look into GHL without fighting it.</p>
+    <details><summary>1 · Brand fonts &amp; colors (do this once)</summary><div class="det-body">
+      <p>In the Funnel/Website builder, open <b>Settings → Custom CSS</b> (or the page's Custom Code/Head) and paste:</p>
+      <pre>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+
+h1,h2,h3,.headline{font-family:'Cinzel',serif !important;color:#E2CF98;}
+body,p,li{font-family:'Cormorant Garamond',serif !important;font-size:20px;}
+.eyebrow,.label,button,.cta{font-family:'Space Mono',monospace !important;letter-spacing:1px;}
+
+/* page */
+body,.page{background:#16204a;color:#ECE7D8;}
+a,button,.cta{background:#C8A44D;color:#1A1530;}</pre>
+      <p>Brand color palette to set in the builder's color picker:</p>
+      <ul>
+        <li>Background: <b>#16204A</b> (navy) / <b>#0F1330</b> (deep sections)</li>
+        <li>Primary / buttons: <b>#C8A44D</b> (gold)</li>
+        <li>Headings on dark: <b>#E2CF98</b> (soft gold)</li>
+        <li>Accent (sparingly): <b>#B9A3E3</b> (lavender)</li>
+      </ul>
+    </div></details>
+    <details><summary>2 · Funnel structure</summary><div class="det-body">
+      <ol>
+        <li><b>Step 1 — Sales / Order page.</b> Use a 2-step order form. Top half = the hero (headline + subhead + the cover image). Lower half = the offer stack + the gold "Add to Cart — Only $17" button + reassurance line.</li>
+        <li><b>Step 2 — (optional) One-click upsell.</b> If you ever add a deeper offer, this is where it goes. Skip for launch.</li>
+        <li><b>Step 3 — Thank-you / Delivery page.</b> Confirmation + download buttons (or trigger the delivery email). Same navy+gold skin.</li>
+      </ol>
+    </div></details>
+    <details><summary>3 · The product &amp; delivery</summary><div class="det-body">
+      <ul>
+        <li>Create a <b>Product</b>: "The Tarot Ritual Lab" — price <b>$17 one-time</b>. Product image = <code>cover.jpg</code>.</li>
+        <li>Bundle the three deliverables (Journal PDF + Audio + Symbol Map) as the fulfillment — attach files to the product, or deliver via the thank-you page download buttons, or an automation email.</li>
+        <li>Connect your Stripe/payment integration to the order form.</li>
+        <li><b>Tip:</b> a small "order bump" works well here if you split the Audio Guide out as the bump (+$X) — but the clean $17-all-in is the stronger launch.</li>
+      </ul>
+    </div></details>
+    <details><summary>4 · Assets to upload &amp; mobile</summary><div class="det-body">
+      <ul>
+        <li>Upload <code>cover.jpg</code> (product + hero), <code>audio-guide.jpg</code> and <code>symbol-map.png</code> (offer-stack visuals / deliverables).</li>
+        <li>Use the <b>sales-hero</b> image only as a layout reference — rebuild it with real text blocks so it stays editable and crisp.</li>
+        <li><b>Mobile:</b> stack the sections, keep the gold-on-navy contrast, and make the CTA button full-width. Keep one pulse-divider between sections — don't over-decorate small screens.</li>
+      </ul>
+    </div></details>
+  </section>
+
+  <section>
+    <div class="eyebrow">Take it with you</div>
+    <h2>Downloads</h2>
+    <div class="dl">
+      <a href="assets/cover.jpg" download>Cover (JPG)</a>
+      <a href="downloads/the-pattern-hunters-journal.pdf" download>Journal (PDF)</a>
+      <a href="assets/audio-guide.jpg" download>Audio Guide (JPG)</a>
+      <a href="downloads/the-symbol-map.png" download>Symbol Map (PNG)</a>
+      <a href="downloads/the-symbol-map.html" download>Symbol Map (editable HTML)</a>
+      <a href="downloads/brand-unification-spec.md" download>Full brand spec (MD)</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="pulse" style="width:200px;margin:0 auto 22px;"></div>
+    Built with Matt · <span class="brand">TAROTPULSE</span><br>
+    One system, head to toe. Stay feral.
+  </footer>
+
+</div>
+</body></html>

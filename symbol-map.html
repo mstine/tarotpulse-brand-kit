@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>The Symbol Map — TarotPulse</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');
+:root{--navy:#16204a;--obsidian:#0f1330;--gold:#c8a44d;--gold-deep:#b98f3c;--gold-soft:#e2cf98;--lav:#b9a3e3;--ink:#e9e3d2;--mut:#9a93b4;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{width:1480px;height:1040px;background:radial-gradient(130% 90% at 50% 0%,#1d2752 0%,var(--navy) 50%,var(--obsidian) 100%);color:var(--ink);font-family:'Cormorant Garamond',serif;overflow:hidden;position:relative;}
+.frame{position:absolute;inset:26px;border:1.5px solid rgba(200,164,77,.5);border-radius:6px;pointer-events:none;}
+.frame::before{content:"";position:absolute;inset:7px;border:1px solid rgba(200,164,77,.22);border-radius:4px;}
+.wrap{padding:52px 60px;height:100%;display:flex;flex-direction:column;}
+/* header */
+.eyebrow{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:5px;color:var(--gold);text-align:center;text-transform:uppercase;}
+h1{font-family:'Cinzel',serif;font-weight:700;font-size:52px;color:var(--gold-soft);text-align:center;letter-spacing:2px;margin-top:6px;text-shadow:0 2px 18px rgba(0,0,0,.4);}
+.sub{font-style:italic;font-size:23px;color:#cfc8e6;text-align:center;margin-top:2px;}
+.pulse{height:26px;margin:14px auto 22px;width:340px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='26'%3E%3Cpath d='M0 13 H120 l9 -11 l9 22 l11 -19 l7 8 H340' fill='none' stroke='%23c8a44d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+/* grid */
+.cols{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:30px;flex:1;}
+.panel{border:1px solid rgba(200,164,77,.35);border-radius:8px;padding:20px 22px;background:rgba(13,19,48,.35);}
+.ph{font-family:'Cinzel',serif;font-weight:600;font-size:21px;color:var(--gold);letter-spacing:1px;margin-bottom:4px;}
+.pl{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--mut);text-transform:uppercase;margin-bottom:12px;}
+.row{display:flex;gap:10px;font-size:19px;line-height:1.32;margin:7px 0;}
+.row b{color:var(--gold-soft);font-family:'Cinzel',serif;font-weight:600;font-size:16px;min-width:96px;display:inline-block;letter-spacing:.5px;}
+.glyph{color:var(--gold);font-size:21px;}
+.num{display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;font-size:18px;}
+.num span b{color:var(--gold-soft);font-family:'Space Mono',monospace;font-size:14px;margin-right:7px;}
+.major{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px;font-size:16.5px;line-height:1.3;}
+.major span b{color:var(--gold-soft);font-family:'Space Mono',monospace;font-size:12px;margin-right:6px;}
+.callout{margin-top:14px;border-left:3px solid var(--lav);background:rgba(185,163,227,.08);padding:12px 16px;font-style:italic;font-size:18px;color:#e4dcf3;}
+.callout b{font-style:normal;color:var(--lav);font-family:'Cinzel',serif;font-weight:600;}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font-family:'Space Mono',monospace;font-size:13px;color:var(--mut);letter-spacing:1px;}
+.brand{color:var(--gold-soft);font-weight:700;letter-spacing:3px;}
+.spark{color:var(--gold);}
+</style></head>
+<body>
+<div class="frame"></div>
+<div class="wrap">
+  <div class="eyebrow">Track / Decode / Transform</div>
+  <h1>THE SYMBOL MAP</h1>
+  <div class="sub">&amp; Ritual&nbsp;Lab Cheat&nbsp;Sheet</div>
+  <div class="pulse"></div>
+
+  <div class="cols">
+    <!-- LEFT -->
+    <div>
+      <div class="panel">
+        <div class="ph">The Four Counts</div>
+        <div class="pl">what a month of pulls reveals</div>
+        <div class="row"><b>Most-pulled</b><span>The card your deck keeps handing back has unfinished business. Frequency is the message.</span></div>
+        <div class="row"><b>Suit balance</b><span>Where did the month <em>live</em> — fire, water, air, or earth?</span></div>
+        <div class="row"><b>Repeats</b><span>Same card, same number, same symbol. A frequency, not a fluke.</span></div>
+        <div class="row"><b>Astro layer</b><span>The sign or moon you pulled under — a second pattern under the first.</span></div>
+        <div class="callout"><b>The Stalker Card.</b> The one that won't stop showing up isn't the universe stuttering. It's you, not listening yet.</div>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div>
+      <div class="panel" style="margin-bottom:24px;">
+        <div class="ph">The Suits</div>
+        <div class="pl">where the energy lives</div>
+        <div class="row"><b>Major</b><span><span class="glyph">✦</span> The big stuff — life lessons, karmic weather.</span></div>
+        <div class="row"><b>Wands</b><span><span class="glyph">🜂</span> Fire — drive, creativity, passion.</span></div>
+        <div class="row"><b>Cups</b><span><span class="glyph">🜄</span> Water — emotion, relationship, the inner tide.</span></div>
+        <div class="row"><b>Swords</b><span><span class="glyph">🜁</span> Air — thought, conflict, the stories in your head.</span></div>
+        <div class="row"><b>Pentacles</b><span><span class="glyph">🜃</span> Earth — body, money, work, the material ground.</span></div>
+      </div>
+      <div class="panel">
+        <div class="ph">Numerology</div>
+        <div class="pl">the number is the verb</div>
+        <div class="num">
+          <span><b>1</b>beginnings</span><span><b>6</b>harmony</span>
+          <span><b>2</b>choice</span><span><b>7</b>reflection</span>
+          <span><b>3</b>growth</span><span><b>8</b>power</span>
+          <span><b>4</b>structure</span><span><b>9</b>nearing</span>
+          <span><b>5</b>upheaval</span><span><b>10</b>completion</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+      <div class="panel">
+        <div class="ph">Major Arcana, at a glance</div>
+        <div class="pl">one-word keys</div>
+        <div class="major">
+          <span><b>0</b>Fool — leap</span><span><b>XI</b>Justice — balance</span>
+          <span><b>I</b>Magician — will</span><span><b>XII</b>Hanged — surrender</span>
+          <span><b>II</b>Priestess — knowing</span><span><b>XIII</b>Death — ending</span>
+          <span><b>III</b>Empress — abundance</span><span><b>XIV</b>Temperance — blend</span>
+          <span><b>IV</b>Emperor — structure</span><span><b>XV</b>Devil — bondage</span>
+          <span><b>V</b>Hierophant — tradition</span><span><b>XVI</b>Tower — rupture</span>
+          <span><b>VI</b>Lovers — choice</span><span><b>XVII</b>Star — hope</span>
+          <span><b>VII</b>Chariot — drive</span><span><b>XVIII</b>Moon — illusion</span>
+          <span><b>VIII</b>Strength — courage</span><span><b>XIX</b>Sun — vitality</span>
+          <span><b>IX</b>Hermit — solitude</span><span><b>XX</b>Judgement — reckoning</span>
+          <span><b>X</b>Wheel — turning</span><span><b>XXI</b>World — completion</span>
+        </div>
+        <div class="callout" style="border-left-color:var(--gold);background:rgba(200,164,77,.08);"><b style="color:var(--gold);">Elements &amp; Moon.</b> Fire·Wands, Water·Cups, Air·Swords, Earth·Pentacles. New moon = seed it. Full moon = it's revealed.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>The card you'd rather ignore is the assignment.</span>
+    <span class="brand"><span class="spark">✦</span> TAROTPULSE</span>
+  </div>
+</div>
+</body></html>
