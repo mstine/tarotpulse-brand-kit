@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Site Migration Guide · TarotPulse</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');
+:root{--navy:#16204a;--obsidian:#0f1330;--gold:#c8a44d;--gold-deep:#b98f3c;--gold-soft:#e2cf98;--lav:#b9a3e3;--ink:#ece7d8;--mut:#9a93b4;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--navy);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;line-height:1.6;}
+.bar{position:sticky;top:0;background:rgba(15,19,48,.92);backdrop-filter:blur(6px);border-bottom:1px solid rgba(200,164,77,.3);padding:13px 20px;font-family:'Space Mono',monospace;font-size:13px;letter-spacing:1px;z-index:10;}
+.bar a{color:var(--gold-soft);text-decoration:none;}
+.bar a:hover{color:#fff;}
+.doc{max-width:760px;margin:0 auto;padding:30px 22px 70px;}
+h1{font-family:'Cinzel',serif;font-weight:700;color:var(--gold-soft);font-size:clamp(28px,6vw,40px);line-height:1.12;letter-spacing:.5px;margin:.4em 0 .1em;}
+h2{font-family:'Cinzel',serif;font-weight:600;color:var(--gold);font-size:clamp(21px,4.5vw,27px);margin:1.3em 0 .3em;padding-top:.4em;border-top:1px solid rgba(200,164,77,.2);}
+h3{font-family:'Cinzel',serif;font-weight:600;color:var(--gold-soft);font-size:19px;margin:1.1em 0 .2em;}
+p,li{font-size:18px;color:#ddd8ea;}
+a{color:var(--gold-soft);}
+strong,b{color:var(--gold-soft);font-weight:600;}
+em{color:#cfc8e6;}
+code{font-family:'Space Mono',monospace;font-size:.85em;background:rgba(200,164,77,.12);color:var(--gold-soft);padding:1px 6px;border-radius:4px;}
+pre{background:#0b0f26;border:1px solid rgba(200,164,77,.25);border-radius:8px;padding:16px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+pre code{background:none;color:#d9e0ff;padding:0;font-size:13px;line-height:1.55;}
+hr{border:none;border-top:1px solid rgba(200,164,77,.25);margin:1.6em 0;}
+blockquote{border-left:3px solid var(--lav);background:rgba(185,163,227,.08);margin:1em 0;padding:.5em 16px;border-radius:0 6px 6px 0;font-style:italic;}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0;border:1px solid rgba(200,164,77,.22);border-radius:8px;}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:16px;}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid rgba(200,164,77,.18);}
+th{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);background:rgba(13,19,48,.6);}
+ul,ol{padding-left:22px;}
+li{margin:.4em 0;}
+li input[type=checkbox]{accent-color:var(--gold);margin-right:6px;}
+.foot{text-align:center;color:var(--mut);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;margin-top:50px;}
+</style></head>
+<body>
+<div class="bar"><a href="index.html">← TarotPulse Brand Kit</a></div>
+<div class="doc">
+<h1>Migrating mytarotpulse.com to the Unified Brand</h1>
+<p><strong>Good news up front:</strong> mytarotpulse.com is already built in <strong>GoHighLevel</strong> (it's served off LeadConnector). Same platform as the funnel — so this is a <em>restyle inside the tool you already use</em>, not a rebuild or a migration to anywhere. The brand CSS from this kit drops straight in.</p>
+<hr />
+<h2>0. Before you touch anything</h2>
+<ul>
+<li><strong>Duplicate the site/funnel first</strong> and work on the copy. Keep the live site up until the new one is QA'd.</li>
+<li>Have this kit open in another tab — the colors, the fonts, and the homepage comp (<code>site-refresh.html</code>).</li>
+</ul>
+<h2>1. Global brand settings — do this once</h2>
+<p>In the site builder → <strong>Settings → Custom CSS</strong> (or the page Head/Custom Code), paste:</p>
+<pre><code class="language-css">@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+
+h1,h2,h3,.headline{font-family:'Cinzel',serif !important;color:#E2CF98;}
+body,p,li{font-family:'Cormorant Garamond',serif !important;font-size:20px;color:#ECE7D8;}
+.eyebrow,.label,button,.cta,nav a{font-family:'Space Mono',monospace !important;letter-spacing:1px;}
+body,.page,section{background:#16204A;}
+a,button,.cta{background:#C8A44D;color:#1A1530;}
+</code></pre>
+<p>Brand colors to register in the builder's color picker:
+- Background: <strong>#16204A</strong> (navy) / <strong>#0F1330</strong> (deep sections)
+- Primary / buttons: <strong>#C8A44D</strong> (antique gold)
+- Headings on dark: <strong>#E2CF98</strong> (soft gold)
+- Body text: <strong>#ECE7D8</strong> (ivory)
+- Accent, sparingly: <strong>#B9A3E3</strong> (lavender)</p>
+<h2>2. The swaps (current → target)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Current live site</th>
+<th>Change to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page background</td>
+<td>white</td>
+<td><strong>navy #16204A</strong></td>
+</tr>
+<tr>
+<td>CTA button</td>
+<td>bright yellow <code>#F0D878</code></td>
+<td><strong>antique gold #C8A44D</strong></td>
+</tr>
+<tr>
+<td>Body / nav text</td>
+<td>slate <code>#4C566A</code></td>
+<td>ivory <code>#ECE7D8</code></td>
+</tr>
+<tr>
+<td>Heading font</td>
+<td>Cinzel <strong>Decorative</strong></td>
+<td><strong>Cinzel</strong> (cleaner)</td>
+</tr>
+<tr>
+<td>Body fonts (3, mixed)</td>
+<td>Open Sans / Montserrat / Lato</td>
+<td><strong>Cormorant Garamond</strong> (body) + <strong>Space Mono</strong> (labels)</td>
+</tr>
+<tr>
+<td>Feature icons</td>
+<td>pastel watercolor</td>
+<td><strong>gold line-art</strong> (see comp)</td>
+</tr>
+<tr>
+<td>Hero</td>
+<td>purple photo + broken video</td>
+<td><strong>navy + cover/gold-frame + pulse-waveform</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2>3. Fix the broken hero video (do this regardless of rebrand)</h2>
+<p>The live hero has a YouTube embed that isn't loading — it currently shows a <strong>large black box</strong>. Either re-embed a working video, or replace that slot with the <strong>cover image in a gold frame</strong> (as in the comp). Don't ship the black box.</p>
+<h2>4. Page-by-page</h2>
+<ol>
+<li><strong>Nav</strong> — gold pulse-mark + gold "TAROTPULSE" wordmark; links in Space Mono; the CTA button gold.</li>
+<li><strong>Hero</strong> — navy ground; Cinzel gold headline; Cormorant subhead; gold "Start Your Journey" button; cover/video in a thin gold frame. Optional: the founder's-data stat line ("2.5 years · 1,167 pulls · …") — this is the real positioning from the sales-page work.</li>
+<li><strong>Feature trio</strong> (<em>Arcana Insights / Healing Analytics / Sacred Data</em>) — navy cards with <strong>gold line-icons</strong>, Cinzel titles, Space Mono numbers. Swap out the pastel watercolor images. Copy stays; it's already on-message.</li>
+<li><strong>Dividers</strong> — drop a <strong>gold pulse-waveform</strong> between sections (one per break — don't over-decorate).</li>
+<li><strong>Footer</strong> — pulse-mark + the tagline <em>"Track your trends. See your patterns. Change your world."</em>, gold-on-navy.</li>
+<li><strong>Blog template</strong> — apply the same global CSS so posts inherit the brand automatically.</li>
+</ol>
+<h2>5. QA checklist</h2>
+<ul>
+<li>[ ] No leftover white backgrounds, yellow buttons, or slate text</li>
+<li>[ ] One CTA color (gold), one CTA label, everywhere</li>
+<li>[ ] Gold-on-navy contrast reads; ivory body is legible</li>
+<li>[ ] Hero video works (or is replaced) — no black box</li>
+<li>[ ] Mobile: sections stack, CTA full-width, contrast holds</li>
+<li>[ ] Fonts consolidated to the three — no stray Times/Open Sans/Lato</li>
+</ul>
+<h2>Effort</h2>
+<ul>
+<li><strong>Fast pass (~½ day):</strong> global CSS + background/CTA/fonts + fix the video. ~70% uniform immediately; the site stops clashing with the funnel.</li>
+<li><strong>Full refresh (+~1 day):</strong> hero rebuild, gold feature icons, pulse/filigree motifs.</li>
+</ul>
+<p>The homepage comp (<code>site-refresh.html</code> in this kit) is the target to build against.</p>
+<div class="foot">✦ TAROTPULSE · part of the brand kit</div>
+</div>
+</body></html>
