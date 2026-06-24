@@ -63,6 +63,15 @@ ol,ul{padding-left:22px;}
 footer{text-align:center;padding:50px 0 60px;color:var(--mut);font-family:'Space Mono',monospace;font-size:13px;letter-spacing:1px;}
 footer .brand{color:var(--gold-soft);letter-spacing:3px;}
 .btn-demo{display:inline-block;background:linear-gradient(180deg,#d9b75f,#c8a44d);color:#1a1530;font-family:'Cinzel',serif;font-weight:700;font-size:18px;padding:13px 30px;border-radius:8px;text-decoration:none;box-shadow:0 6px 20px rgba(200,164,77,.3);}
+/* logo */
+.logogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-top:18px;}
+.logobox{border:1px solid rgba(200,164,77,.22);border-radius:10px;overflow:hidden;}
+.logobox .frame{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:22px;}
+.logobox img{width:78%;height:auto;display:block;}
+.logobox .cap{padding:11px 14px;font-size:14px;color:#cfc8e6;background:rgba(13,19,48,.45);}
+.logobox .cap b{font-family:'Cinzel',serif;color:var(--gold-soft);display:block;font-size:14px;letter-spacing:.5px;}
+.logobox .cap .tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:3px;}
+.checker{background-color:#cfc8d8;background-image:linear-gradient(45deg,#9a93b4 25%,transparent 25%),linear-gradient(-45deg,#9a93b4 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#9a93b4 75%),linear-gradient(-45deg,transparent 75%,#9a93b4 75%);background-size:22px 22px;background-position:0 0,0 11px,11px -11px,-11px 0;}
 </style></head>
 <body>
 <div class="wrap">
@@ -83,6 +92,45 @@ footer .brand{color:var(--gold-soft);letter-spacing:3px;}
     <div class="eyebrow">The idea</div>
     <h2>Tarot × Pulse</h2>
     <p>The brand thesis is in the name. <b>Tarot</b> — ancient, gold, serif, the heirloom grimoire. <b>Pulse</b> — the signal, the data-line, the pattern-tracking that makes TarotPulse a category of one instead of one more pretty tarot journal. The look holds both at once: an heirloom grimoire that's secretly a data instrument. Every asset carries the same three tells — the <b>gold pulse-waveform</b>, the <b>filigree that melts into circuit-traces</b>, and constellations drawn as <b>connected data-points</b>.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">The mark</div>
+    <h2>The logo</h2>
+    <p>One mark — the heart, the crossed swords, the gold-to-lavender pulse running through it. The thing that was fighting you on the funnel page is that the old files had a <b>solid background baked in</b>, so the logo carried its own navy (or white) block onto whatever you placed it on. These don't. The transparent versions drop cleanly onto <em>any</em> page color; the pre-baked ones are ready if your background is one of the brand grounds.</p>
+
+    <h3>The icon — pick by your page tone</h3>
+    <div class="logogrid">
+      <div class="logobox"><div class="frame checker"><img src="assets/logo/tarotpulse-mark-lightink-transparent.png" alt="light-ink mark, transparent"></div><div class="cap"><span class="tag">Transparent · dark pages</span><b>Light-ink mark</b>white + lavender — drops on any dark color</div></div>
+      <div class="logobox"><div class="frame checker"><img src="assets/logo/tarotpulse-mark-navyink-transparent.png" alt="navy-ink mark, transparent"></div><div class="cap"><span class="tag">Transparent · light pages</span><b>Navy-ink mark</b>navy + lavender — drops on any light color</div></div>
+      <div class="logobox"><div class="frame" style="background:#16204a"><img src="assets/logo/tarotpulse-mark-on-navy-16204A.png" alt="mark on navy"></div><div class="cap"><span class="tag">Baked · ready</span><b>On Navy</b>#16204A</div></div>
+      <div class="logobox"><div class="frame" style="background:#0f1330"><img src="assets/logo/tarotpulse-mark-on-obsidian-0F1330.png" alt="mark on obsidian"></div><div class="cap"><span class="tag">Baked · ready</span><b>On Obsidian</b>#0F1330</div></div>
+      <div class="logobox"><div class="frame" style="background:#fbf9f3"><img src="assets/logo/tarotpulse-mark-on-ivory-FBF9F3.png" alt="mark on ivory"></div><div class="cap"><span class="tag">Baked · ready</span><b>On Ivory</b>#FBF9F3</div></div>
+    </div>
+    <p style="font-size:16px;color:var(--mut)">The checkerboard squares mean transparent — that's the see-through background showing, not part of the art. Transparent is the safe default; if you need it baked on a page color that isn't one of the three grounds, send me the hex and I'll cut it.</p>
+
+    <div class="dl">
+      <a href="assets/logo/tarotpulse-mark-lightink-transparent.png" download>Light-ink · transparent (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-navyink-transparent.png" download>Navy-ink · transparent (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-lightink-transparent-trimmed.png" download>Light-ink · trimmed (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-navyink-transparent-trimmed.png" download>Navy-ink · trimmed (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-on-navy-16204A.png" download>On Navy (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-on-obsidian-0F1330.png" download>On Obsidian (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-on-ivory-FBF9F3.png" download>On Ivory (PNG)</a>
+    </div>
+
+    <h3>The wordmark — horizontal lockup</h3>
+    <p>Icon + "TarotPulse" + tagline, set in the brand fonts (Cinzel + Cormorant Garamond, gold filigree divider). Use this where you've got width — site header, email banner, the freebie cover. Same transparent-vs-baked logic as the icon.</p>
+    <div class="logogrid" style="grid-template-columns:1fr;gap:16px;">
+      <div class="logobox"><div class="frame" style="background:#fbf9f3;aspect-ratio:auto;padding:26px 30px"><img src="assets/logo/tarotpulse-wordmark-on-ivory.png" alt="wordmark on ivory" style="width:100%"></div><div class="cap"><span class="tag">Baked · light</span><b>On Ivory</b>#FBF9F3</div></div>
+      <div class="logobox"><div class="frame" style="background:#16204a;aspect-ratio:auto;padding:26px 30px"><img src="assets/logo/tarotpulse-wordmark-on-navy.png" alt="wordmark on navy" style="width:100%"></div><div class="cap"><span class="tag">Baked · dark</span><b>On Navy</b>#16204A</div></div>
+    </div>
+    <div class="dl">
+      <a href="assets/logo/tarotpulse-wordmark-navyink-transparent.png" download>Wordmark · navy-ink transparent (PNG)</a>
+      <a href="assets/logo/tarotpulse-wordmark-lightink-transparent.png" download>Wordmark · light-ink transparent (PNG)</a>
+      <a href="assets/logo/tarotpulse-wordmark-on-ivory.png" download>Wordmark · on Ivory (PNG)</a>
+      <a href="assets/logo/tarotpulse-wordmark-on-navy.png" download>Wordmark · on Navy (PNG)</a>
+    </div>
   </section>
 
   <section>
@@ -124,6 +172,96 @@ footer .brand{color:var(--gold-soft);letter-spacing:3px;}
       <div class="card"><img src="assets/symbol-map.png" alt="symbol map"><div class="cap"><span class="tag">Funnel · ready</span><b>The Symbol Map</b> — built in real type (fully editable).</div></div>
       <div class="card"><img src="assets/sales-hero.jpg" alt="sales hero"><div class="cap"><span class="tag warn">Direction only</span><b>Sales Hero</b> — visual mockup. Build the real page in GHL with the copy below.</div></div>
     </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">The next one to make</div>
+    <h2>The freebie workbook</h2>
+    <p>This is the new lead magnet at the top of the funnel — the free download people get from the ad in exchange for their email. Keep it light: a short <b>intro to reading patterns</b> — jumping cards, the cards that keep showing up, why noticing them over time is the whole game. It's the on-ramp to the paid <b>Tarot Ritual Lab</b>. You're writing and building this one; everything below is so it comes out looking like it belongs to the same family — same hand that made the Journal.</p>
+
+    <div class="note"><b>The rule of thumb —</b> if you put the freebie next to the Pattern-Hunter's Journal, a stranger should think the same person made both. Match the Journal; don't invent a new look.</div>
+
+    <h3>Match this</h3>
+    <div class="gal" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));max-width:640px;">
+      <div class="card"><img src="assets/cover.jpg" alt="journal cover"><div class="cap"><span class="tag">Template · look &amp; feel</span><b>The Pattern-Hunter's Journal</b> — the freebie is its little sibling.</div></div>
+      <div class="card"><img src="assets/interior-welcome.png" alt="journal interior"><div class="cap"><span class="tag">Template · interior</span><b>Interior pages</b> — same margins, dividers, type.</div></div>
+    </div>
+
+    <h3>The on-brand recipe</h3>
+    <div class="motifs">
+      <div class="motif"><b>Type</b>Titles in <span style="font-family:'Cinzel',serif">Cinzel</span> (soft gold). Body in <span style="font-family:'Cormorant Garamond',serif">Cormorant Garamond</span>. Labels/eyebrows in <span style="font-family:'Space Mono',monospace;font-size:14px">Space Mono</span>.</div>
+      <div class="motif"><b>Color</b>Navy <code>#16204A</code> ground, gold <code>#C8A44D</code> for accents &amp; rules, ivory <code>#FBF9F3</code> if it's a printable. Lavender <code>#B9A3E3</code> once, max.</div>
+      <div class="motif"><b>Motif</b>Drop the gold <b>pulse divider</b> between sections — it's the through-line that ties it to every other asset.</div>
+      <div class="motif"><b>Marks</b>Use the transparent logo so it sits on whatever background; add the QR to the back / CTA page pointing at the funnel.</div>
+    </div>
+
+    <h3>Building blocks — grab what you need</h3>
+    <div class="dl">
+      <a href="assets/logo/tarotpulse-mark-navyink-transparent.png" download>Logo · navy-ink (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-lightink-transparent.png" download>Logo · light-ink (PNG)</a>
+      <a href="assets/qr-tarotpulse.png" download>TarotPulse QR (PNG)</a>
+      <a href="downloads/the-symbol-map.png" download>Symbol Map (PNG)</a>
+      <a href="brand-spec.html" target="_blank">Full brand spec ↗</a>
+      <a href="downloads/the-pattern-hunters-journal.pdf" download>Journal — reference (PDF)</a>
+    </div>
+    <p style="font-size:16px;color:var(--mut)">All the colors, fonts, and motifs in one place are up in <b>The system</b> above; the logo set is in <b>The mark</b>.</p>
+
+    <h3>Or build it with Claude Code</h3>
+    <p>Don't want to lay it out by hand? Open <b>Claude Code</b> in a new empty folder and paste the prompt below. It pulls these brand assets down itself, then drafts and builds the freebie workbook <em>with you</em> — and renders it to PDF. Show it your copy (or let it propose a structure first).</p>
+    <details><summary>The Claude Code prompt — copy &amp; paste</summary><div class="det-body">
+      <button onclick="navigator.clipboard.writeText(document.getElementById('ccprompt').innerText);this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy prompt',1600)" style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;background:var(--gold);color:var(--obsidian);border:none;border-radius:7px;padding:9px 16px;cursor:pointer;margin:4px 0 12px;">Copy prompt</button>
+      <pre id="ccprompt">You are my brand-aware design+build assistant. We're making the TarotPulse freebie
+workbook — the free lead magnet people get from the ad in exchange for their email.
+It's a short intro to reading patterns in tarot, and the on-ramp to the paid $17 Tarot
+Ritual Lab. It MUST look like it came from the same hand that made the Pattern-Hunter's
+Journal. Match the brand; don't invent a new look.
+
+STEP 1 — Pull the brand assets into ./assets (use curl):
+  Brand kit lives at https://mstine.github.io/tarotpulse-brand-kit/
+  - brand spec (READ THIS FIRST, it's the rulebook):
+      https://raw.githubusercontent.com/mstine/tarotpulse-brand-kit/main/downloads/brand-unification-spec.md
+  - logo, navy-ink transparent (for light pages):
+      https://mstine.github.io/tarotpulse-brand-kit/assets/logo/tarotpulse-mark-navyink-transparent.png
+  - logo, light-ink transparent (for dark pages):
+      https://mstine.github.io/tarotpulse-brand-kit/assets/logo/tarotpulse-mark-lightink-transparent.png
+  - wordmark lockup (for the cover):
+      https://mstine.github.io/tarotpulse-brand-kit/assets/logo/tarotpulse-wordmark-on-ivory.png
+  - QR to the funnel:
+      https://mstine.github.io/tarotpulse-brand-kit/assets/qr-tarotpulse.png
+  - Symbol Map (reference / can excerpt):
+      https://mstine.github.io/tarotpulse-brand-kit/downloads/the-symbol-map.png
+  - Pattern-Hunter's Journal PDF — the LOOK to match (reference only):
+      https://mstine.github.io/tarotpulse-brand-kit/downloads/the-pattern-hunters-journal.pdf
+
+STEP 2 — Internalize the brand from the spec. Quick reference:
+  - Palette: navy #16204A / obsidian #0F1330 ground; antique gold #C8A44D (soft gold
+    #E2CF98 on dark); lavender #B9A3E3 used ONCE, max; ivory paper #FBF9F3.
+  - Type (Google Fonts): Cinzel = titles; Cormorant Garamond = body; Space Mono =
+    labels/eyebrows ("the data layer").
+  - Motifs: gold pulse/EKG waveform as section dividers; thin gold keyline frame.
+    Wordmark on the cover; QR on the final CTA page.
+
+STEP 3 — Content. SHORT and light (a lead magnet, not the paid product — aim ~6-10
+pages). Ask me for my outline/draft copy. If I don't have one, propose a structure and
+draft it in a knowing, warm, not-precious voice, then iterate. A good default arc:
+  1. Cover (wordmark + title + one-line promise)
+  2. "Why your cards repeat" — jumping cards and the card that keeps showing up (the
+     "Stalker Card"), framed as signal not coincidence
+  3. How to notice patterns over time — the 30-day-pull idea, lightly
+  4. A 1-page starter tracker they can print/use
+  5. A few symbol prompts (pull a couple from the Symbol Map)
+  6. CTA page to the Tarot Ritual Lab (QR + link): "ready to decode the whole story?"
+
+STEP 4 — Build as HTML/CSS, then render to PDF with Playwright (Chromium print-to-PDF,
+@page US Letter or A4). Set REAL type — never generate images of text. Optionally an
+ivory/printable version and a navy/screen version. One pulse divider between sections;
+don't over-decorate.
+
+STEP 5 — Show me the rendered PDF, take my notes, iterate. When I'm happy, export the
+final PDF plus a cover thumbnail (PNG).
+
+Start with Step 1, then show me the proposed structure before writing the full draft.</pre>
+    </div></details>
   </section>
 
   <section>
@@ -204,11 +342,14 @@ a,button,.cta{background:#C8A44D;color:#1A1530;}</pre>
     <div class="eyebrow">Take it with you</div>
     <h2>Downloads</h2>
     <div class="dl">
+      <a href="assets/logo/tarotpulse-mark-lightink-transparent.png" download>Logo · light-ink transparent (PNG)</a>
+      <a href="assets/logo/tarotpulse-mark-navyink-transparent.png" download>Logo · navy-ink transparent (PNG)</a>
       <a href="assets/cover.jpg" download>Cover (JPG)</a>
       <a href="downloads/the-pattern-hunters-journal.pdf" download>Journal (PDF)</a>
       <a href="assets/audio-guide.jpg" download>Audio Guide (JPG)</a>
       <a href="downloads/the-symbol-map.png" download>Symbol Map (PNG)</a>
       <a href="downloads/the-symbol-map.html" target="_blank">Symbol Map (HTML) ↗</a>
+      <a href="assets/qr-tarotpulse.png" download>TarotPulse QR (PNG)</a>
       <a href="brand-spec.html" target="_blank">Brand spec ↗</a>
       <a href="migration-guide.html" target="_blank">Migration guide ↗</a>
       <a href="site-refresh.html" target="_blank">Homepage refresh ↗</a>
